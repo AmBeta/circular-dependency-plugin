@@ -1,38 +1,21 @@
 {
-  "name": "circular-dependency-plugin",
+  "name": "@hualala/circular-dependency-plugin",
+  "version": "3.1.0",
   "main": "index.js",
+  "description": "Detect modules with circular dependencies when bundling with webpack.",
+  "scripts": {
+    "test": "mocha __tests__"
+  },
+  "dependencies": {},
   "devDependencies": {
-    "jest": "^22.4.2",
-    "memory-fs": "^0.4.1",
-    "webpack": "^4.0.1"
+    "memory-fs": "^0.3.0",
+    "mocha": "^2.3.4",
+    "sinon": "^1.17.2",
+    "webpack": "^1.12.9"
   },
   "peerDependencies": {
-    "webpack": ">=4.0.1"
+    "webpack": "^3.0.0"
   },
-  "description": "Detect modules with circular dependencies when bundling with webpack.",
-  "version": "5.0.2",
-  "engines": {
-    "node": ">=6.0.0"
-  },
-  "scripts": {
-    "test": "jest"
-  },
-  "files": [
-    "index.js"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/aackerman/circular-dependency-plugin.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/aackerman/circular-dependency-plugin/issues"
-  },
-  "homepage": "https://github.com/aackerman/circular-dependency-plugin#readme",
-  "jest": {
-    "testMatch": [
-      "**/?(*.)(spec|test).js?(x)"
-    ]
-  }
+  "author": "ambeta",
+  "license": "ISC"
 }
